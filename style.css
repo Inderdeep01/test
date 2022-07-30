@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Brush Script MT', cursive;
+}
+nav{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#container div{
+    height: 50%;
+    width: 50%;
+    margin: 10px;
+    /* border: 2px solid red ; */
+    align-self: center;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+#container div img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#my-name{
+    text-align: center;
+}
+#my-name h1{
+    font-size: 5em;
+}
+#my-name h2{
+    font-size: 2.5em;
+    color: #bc255d;
+}
+
+#about{
+    margin: 10%;
+    align-self: center;
+    text-align: center;
+}
+
+#about h1{
+    color: #bc255d;
+    font-size: 2.5em;
+}
+#about p{
+    font-size: 2em;
+}
+fieldset{
+    margin: 10%;
+}
+legend{
+    font-size: 2.5em;
+    color: #bc255d;
+}
