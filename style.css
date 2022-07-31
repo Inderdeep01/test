@@ -209,3 +209,7 @@ legend{
     font-size: 2.5em;
     color: #bc255d;
 }
+fieldset a{
+    text-decoration: none;
+    color: white;
+}
