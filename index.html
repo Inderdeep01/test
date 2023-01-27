@@ -3,19 +3,20 @@
     <head>
       <link rel="icon" type="image/x-icon" href="./assets/logo.png">
         <link rel="stylesheet" href="style.css">
+        <meta content=" width=device-width, initial-scale=1, " name="viewport" />
     </head>
     <body>
-        <nav class="navbar">
+        <!-- <nav class="navbar">
                 <a class="" href="#container"><img id="logo" src="./assets/logo.png"></a>
                 <a class="btn-outline" href="#about">About</a>
                 <a class="btn-outline" href="#contact">Contact</a>
-        </nav>
+        </nav> -->
         <div id="container">
-            <div id="my-name">
+            <div id="my-name" class="hidden">
                 <h1 id="sticky">Inderdeep Singh Sidhu</h1>
-                <h2>Back End Developer</h2>
-                
-                <div id="img-container" style="margin-left:25% ;">
+                <h2>Software Developer</h2>
+                <!-- 
+                <div id="img-container">  style="margin-left:25% ;"
                     <img id="js" src="assets/js.png" style="height:100px; width:100px;">
                     <img id="html" src="assets/html.png" style="height:100px; width:100px;">
                     <img id="cpp" src="assets/cpp.svg" style="height:100px; width:100px;">
@@ -25,26 +26,40 @@
                     <img id="js" src="assets/bitcoin.png" style="height:100px; width:100px;">
                     <img id="js" src="assets/eth.png" style="height:100px; width:100px;">
                     <img id="js" src="assets/mining.png" style="height:100px; width:100px;">
-                </div>
+                </div> -->
             </div>
-            <div id="my-photo">
+            <div id="my-photo" class="hidden2">
                 <img src="assets/inderdeep.png">
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
         <div id="about">
-            <h1>About Me</h1>
-            <p>I am Inderdeep Singh Sidhu, mastering in back-end technologies. I am also learning web2 and web3 technologies.
+            <h1 class="hidden">About Me</h1>
+            <p class="hidden">I am Inderdeep Singh Sidhu, mastering in back-end technologies. I am also learning web2 and web3 technologies.
                  I am familiar with cryptocurrencies and mining.
                  Listed below are my projects.
 
             </p>
+            <div class="skills-container hidden">
+              <div class="skill">
+                <div class="skill-preview">
+                  <h6>Programming</h6>
+                  <h2>JavaScript </h2>
+                  
+                </div>
+                <div class="skill-info">
+                  <div class="progress-container">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div id="projects">
+        <div id="projects" class="hidden">
             <h1>Projects</h1>
             <div id="card-holder">
                 <div class="container">
-                    <div class="card">
+                    <div class="card hidden">
                       <div class="box">
                         <div class="content">
                           <h2>01</h2>
@@ -55,7 +70,7 @@
                       </div>
                     </div>
                   
-                    <div class="card">
+                    <div class="card hidden">
                       <div class="box">
                         <div class="content">
                           <h2>02</h2>
@@ -66,7 +81,7 @@
                       </div>
                     </div>
                   
-                    <div class="card">
+                    <div class="card hidden">
                       <div class="box">
                         <div class="content">
                           <h2>03</h2>
@@ -77,7 +92,7 @@
                       </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden">
                         <div class="box">
                           <div class="content">
                             <h2>04</h2>
@@ -88,7 +103,7 @@
                         </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card hidden">
                         <div class="box">
                           <div class="content">
                             <h2>05</h2>
@@ -99,7 +114,7 @@
                         </div>
                       </div>
 
-                      <div class="card">
+                      <div class="card hidden">
                         <div class="box">
                           <div class="content">
                             <h2>06</h2>
@@ -113,7 +128,7 @@
             </div>
             <!-- To be updated once done -->
         </div>
-        <footer id="contact">
+        <footer id="contact" class="hidden2">
             <fieldset>
                 <legend>Contact Me</legend>
                 <div>
@@ -122,5 +137,6 @@
                 </div>
             </fieldset>
         </footer>
+        <script src="app.js"></script>
     </body>
 </html>
