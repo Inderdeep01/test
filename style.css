@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
 *{
   box-sizing: border-box;
 }
@@ -11,8 +12,8 @@
 .hidden2{
   opacity: 0;
   transition: all 1s;
-  filter: blur(10px);
-  transform: translateX(100%);
+  filter: blur(20px);
+  /* transform: translateX(100%); */
 }
 .show{
   opacity: 1;
@@ -81,6 +82,7 @@ nav{
 
 #my-name{
     text-align: center;
+    font-family: 'Itim';
     /* transform: translateX(-100%); */
 }
 #my-name h1{
@@ -116,12 +118,22 @@ nav{
 }
 
 /* Skill Container *********************************************************************************** */
-
+#skill-box{
+  min-height: 100vh;
+}
+#skill-box h1{
+  display: flex;
+  align-items:center;
+	justify-content:center;
+  color: #bc255d;
+  font-size: 2.5em;
+}
 
 .skills-container {
 	display:flex;
 	align-items:center;
 	justify-content:center;
+  flex-direction: column;
 }
 
 .skill {
@@ -152,7 +164,7 @@ nav{
 	background-color: #bc255d;
 	color: #fff;
 	padding: 30px;
-	max-width: 250px;
+	max-width: 190px;
 }
 
 .skill-preview a {
@@ -185,7 +197,7 @@ nav{
 	width: 100%;
 }
 
-.progress::after {
+.progress div{
 	border-radius: 3px;
 	background-color: #bc255d;
 	content: '';
@@ -352,14 +364,19 @@ nav{
   display: none;
 }
   #my-photo{
-    display: none ;
+    opacity: 0.5;
+    display: block;
     overflow: hidden;
   }
   #container{
-    display: grid;
+    /* display: block;
     place-content: center;
-    align-content: center;
-    transform: translateY(-25%);
+    align-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* transform: translateY(-25%); */
   }
 
   #container div{
@@ -388,10 +405,10 @@ nav{
 }
 #about h1{
   color: #bc255d;
-  font-size:1.5em;
+  font-size:1.75em;
 }
 #about p{
-  font-size: 1.25em;
+  font-size: 1em;
   color: white;
 }
 
@@ -402,9 +419,12 @@ nav{
     font-size: 1.5em;
     color: #bc255d;
 }
-/* Skill Container */
+/* Skill Container **************************************************************************/
 
-
+#skill-box h1{
+  color: #bc255d;
+  font-size:1.75em;
+}
 
 .skill-container {
 	display:flex;
@@ -440,7 +460,6 @@ nav{
 	background-color: #bc255d;
 	color: #fff;
 	padding: 15px;
-	width: 80%;
   max-width: none;
   border-radius: 10px;
 }
@@ -473,4 +492,52 @@ legend{
 fieldset div{
   font-size: small;
 }
+}
+@media (max-width:500px) {
+  /* Skill Container */
+
+
+
+.skill-container {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.skill {
+	font-family: 'Muli', sans-serif;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(255, 255, 255, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 75vw;
+}
+
+.skill h6 {
+	display: none;
+}
+
+.skill h2 {
+	letter-spacing: 1px;
+	margin: -5px 0;
+}
+
+.skill-preview {
+	background-color: #bc255d;
+	color: #fff;
+	padding: 15px;
+	width: 80%;
+  max-width: none;
+  border-radius: 10px;
+}
+
+.skill-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
 }
