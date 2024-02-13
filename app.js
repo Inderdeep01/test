@@ -9,6 +9,21 @@ const observer = new IntersectionObserver((enteries)=>{
 
 const skills = [
     {
+        name:'Golang',
+        category:'Programming',
+        proficiency:'80%'
+    },
+    {
+        name:'Solidity',
+        category:'Programming',
+        proficiency:'60%'
+    },
+    {
+        name:'gRPC',
+        category:'Development',
+        proficiency:'80%'
+    },
+    {
         name:'C++',
         category:'Programming',
         proficiency:'90%'
@@ -24,19 +39,29 @@ const skills = [
         proficiency:'60%'
     },
     {
-        name:'Python',
-        category:'Programming',
-        proficiency:'70%'
-    },
-    {
-        name:'Solidity',
-        category:'Programming',
-        proficiency:'50%'
-    },
-    {
         name:'Bash',
         category:'Programming',
         proficiency:'60%'
+    },
+    {
+        name:'SQL',
+        category:'Database',
+        proficiency:'80%'
+    },
+    {
+        name:'NoSQL Key-Value',
+        category:'Database',
+        proficiency:'80%'
+    },
+    {
+        name:'CI/CD',
+        category:'Devops',
+        proficiency:'80%'
+    },
+    {
+        name:'AWS',
+        category:'Cloud',
+        proficiency:'80%'
     },
     {
         name:'Node.js',
@@ -52,11 +77,6 @@ const skills = [
         name:'React.js',
         category:'Development',
         proficiency:'75%'
-    },
-    {
-        name:'REST API',
-        category:'Development',
-        proficiency:'90%'
     },
     {
         name:'Github',
@@ -77,31 +97,6 @@ const skills = [
         name:'Operating System',
         category:'Concepts',
         proficiency:'70%'
-    },
-    {
-        name:'SQL',
-        category:'Database',
-        proficiency:'80%'
-    },
-    {
-        name:'NoSQL Key-Value',
-        category:'Database',
-        proficiency:'80%'
-    },
-    {
-        name:'GraphQL',
-        category:'Database',
-        proficiency:'50%'
-    },
-    {
-        name:'CI/CD',
-        category:'Devops',
-        proficiency:'80%'
-    },
-    {
-        name:'AWS,GCP',
-        category:'Cloud',
-        proficiency:'80%'
     },
     {
         name:'Collaborative',
